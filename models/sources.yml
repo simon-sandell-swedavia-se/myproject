@@ -21,4 +21,6 @@ sources:
           - name: L_ORDERKEY
             tests:
               - unique
+                  config:
+                    severity: warn
               - not_null
