@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: tpch 
+    database: dev_bootcamp
+    schema: tpch
+    tables:
+      - name: orders_bronze 
+      - name: customer_bronze
+      - name: lineitem_bronze
