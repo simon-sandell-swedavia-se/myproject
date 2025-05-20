@@ -5,5 +5,20 @@ sources:
     schema: tpch
     tables:
       - name: orders_bronze 
+        columns:
+          - name: O_ORDERKEY
+            description: primary key
+            tests:
+              - unique
+              - not_null
       - name: customer_bronze
+          - name: C_CUSTKEY
+            description: primary key
+            tests:
+              - unique
+              - not_null
       - name: lineitem_bronze
+          - name: L_ORDERKEY
+            tests:
+              - unique
+              - not_null
